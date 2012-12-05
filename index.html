@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Page</title>
+</head>
+
+<body>
+<script type="text/javascript" src="Ajaxer.js"></script>
+<script type="text/javascript">
+    
+    // async callback
+    function onComplete(e) {
+        alert(e);
+    }
+    // get(url,callBack);
+    Ajaxer.get("place url here ? query=here", onComplete);
+    // post(url,dataObject,callBack);
+    Ajaxer.post("place url here", { test:"1", ola:"2" }, onComplete);
+    
+</script>
+</body>
+</html>
