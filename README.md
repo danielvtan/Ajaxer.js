@@ -4,15 +4,15 @@ A simple ajax class
 ##Using GET
 
 ```javascript
-// async callback
-function onComplete(e) {
-   var json = eval('(' + e + ')');
-}
 // get(url,callBack);
-Ajaxer.get("http://danielvtan.com/ajax.php?query=here", onComplete);
+Ajaxer.get("http://danielvtan.com/ajax.php?query=here", function(e) {
+   var json = eval('(' + e + ')');
+});
 ```
 ##Using GET
 ```javascript
 // post(url,dataObject,callBack);
-Ajaxer.post("http://danielvtan.com/ajax.php", { test:"1", ola:"2" }, onComplete);
+Ajaxer.post("http://danielvtan.com/ajax.php", { test:"1", ola:"2" }, function(e) {
+   var json = eval('(' + e + ')');
+});
 ```
