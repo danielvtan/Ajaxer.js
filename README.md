@@ -9,6 +9,7 @@ Ajaxer.get("http://danielvtan.com/ajax.php?query=here", function(e) {
    var json = eval('(' + e + ')');
 });
 ```
+
 ##Using GET
 ```javascript
 // post(url,dataObject,callBack);
