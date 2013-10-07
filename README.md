@@ -1,7 +1,7 @@
-#Ajaxer.js
+# Ajaxer.js
 A simple ajax class
 
-##Using GET
+## Using GET
 
 ```javascript
 // get(url,callBack);
@@ -10,7 +10,7 @@ Ajaxer.get("http://danielvtan.com/ajax.php?query=here", function(e) {
 });
 ```
 
-##Using GET
+## Using GET
 ```javascript
 // post(url,dataObject,callBack);
 Ajaxer.post("http://danielvtan.com/ajax.php", { test:"1", ola:"2" }, function(e) {
